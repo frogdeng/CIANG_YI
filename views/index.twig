@@ -1,9 +1,12 @@
 {# index.twig #}
 {% extends "/_template/layout.twig" %}
+
+{% block header %}
+	{% include 'partial/header.twig' %}
+{% endblock %}
+
+
 {% block page %}
-
-
-
 <div class="main_slide">
 	<section class="regular-a slider">
 	    <div class="new_photo">
@@ -30,9 +33,6 @@
     <h6>文案文案文案文案文案文案文案文案文案文案文案文案</h6>
 
 
-
-
-
 </div>
 
 <div class="intro">
@@ -54,6 +54,4 @@
 
 	<div class="clear"></div>
 </div>
-
-
 {% endblock %}

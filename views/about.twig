@@ -1,5 +1,14 @@
 {# index.twig #}
 {% extends "/_template/layout.twig" %}
+
+
+
+{% block header %}
+	{% include 'partial/header.twig' with {menu:"About"} %}
+{% endblock %}
+
+
+
 {% block page %}
 
 
