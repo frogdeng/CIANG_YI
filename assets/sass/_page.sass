@@ -1,0 +1,220 @@
+@import "bourbon";
+@import "susy";
+@import _map.scss
+
+
+
+// shorthand
+$desktop: 12 (50px 50px) split
+$pad: 6 (80px 40px) split
+
+$w_desktop: 12 split
+$w_pad: 6 split
+
+
+$breakpoint_desktop: 964px
+$breakpoint_pad: 0 963px
+
+
+$susy: (debug: (image: hide))
+
+
+
+
+
+
+.welcome
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.welcome_des
+			+span(8)
+			+pre(2)
+			padding: 40px 20px
+			margin-bottom: 60px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			h5
+				font-size: 30px
+				margin-bottom: 10px
+				text-align: center
+			h6
+				font-size: 20px
+				color: #888
+
+
+
+.wrapper_grey
+	background: #eee
+	padding: 80px 0
+.intro
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 20px
+		.intro_block
+			+span(4)
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			margin-bottom: 80px
+			img
+				display: block
+				margin-bottom: 20px
+			h6
+				font-size: 20px
+				text-align: center
+				margin-bottom: 10px
+			p
+				font-size: 14px
+				color: #888
+
+
+
+.liil
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		height: 1px
+		background: #eee
+		clear: both
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		height: 1px
+		background: #eee
+		clear: both
+		margin: 30px 0
+
+
+.equipment
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 40px
+
+		h5 
+			font-size: 30px
+			text-align: center
+			margin-bottom: 70px
+		.equipment_col
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: center
+			margin: 20px 0
+			margin-bottom: 50px
+			.photo-d
+				+span(6)
+
+			.description
+				+span(6)
+					h6 
+						font-size: 23px
+						margin-bottom: 10px
+						text-align: left
+					p 
+						font-size: 16px
+						color: #777
+					line-height: 1.6
+
+
+
+
+.product
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 40px
+		.asidemenu
+			+span(3)
+			margin-bottom: 50px
+			ul 
+				li 
+					a 
+						display: block
+						font-size: 18px
+						color: #777
+						margin-bottom: 20px
+						transition: all .3s
+						border-bottom: 1px solid #eee
+						padding-bottom: 5px
+						&:hover
+							color: #222
+
+
+
+		.product_contnet
+			+span(9)
+			margin-bottom: 50px
+			img 
+				margin-bottom: 20px
+			h6 
+				font-size: 23px
+				margin-bottom: 10px
+				text-align: left
+			p 
+				font-size: 16px
+				color: #777
+				line-height: 1.6
+				margin-bottom: 10px
+
+		
+#map
+	width: 100%
+	background: #999
+	height: 500px
+	margin-bottom: 40px
+	iframe
+		width: 100%
+		height: 500px
+
+	
+		
+.address
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 40px
+		margin-bottom: 50px
+		h4 
+			font-size: 30px
+			line-height: 1.2
+			margin-bottom: 10px
+		h6
+			font-size: 18px
+			color: #222
+			margin-top: 20px
+
+		p 
+			font-size: 16px
+			color: #777
+
+
+
+
+
+
+
+
+
+
+

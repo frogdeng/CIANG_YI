@@ -5,7 +5,7 @@
 
 
 // shorthand
-$desktop: 12 (60px 40px) split
+$desktop: 12 (60px 50px) split
 $pad: 6 (80px 40px) split
 
 $w_desktop: 12 split
@@ -145,18 +145,18 @@ header
 						&:hover
 							color: #555
 
-
-
 .active
 	a
 		background-color: #222
 		color: #FFF !important
 
+		
+
 .footer_wrapper
 	width: 100%
 	background: url('../img/flim.png') #000
 	background-repeat: repeat-x
-	padding-top: 80px
+	padding-top: 30px
 
 footer
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -277,7 +277,6 @@ footer
 				margin-bottom: 8px
 
 
-
 .main_slide
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
@@ -286,65 +285,29 @@ footer
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		margin-bottom: 50px
 		.new_photo
-			img
+			img 
 				width: 100%
 
 
 
-
-
-.welcome
-	+susy-breakpoint($breakpoint_pad, $pad)
+.main_inside
+	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 
 
 
-	+susy-breakpoint($breakpoint_desktop, $desktop)
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
-		padding: 40px 20px
+		height: 300px
+		background: url(../img/inside_01.jpg)
 		margin-bottom: 50px
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		h5
-			font-size: 30px
-			margin-bottom: 10px
-		h6
-			font-size: 20px
-			color: #888
+		background-size: cover
 
 
 
 
-.intro
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
 
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		.intro_block
-			+span(4)
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: center
-			margin-bottom: 140px
-			img
-				display: block
-				width: 30%
-				margin-bottom: 20px
-			h6
-				font-size: 20px
-				text-align: center
-				margin-bottom: 10px
-			p
-				font-size: 14px
-				color: #888
-				text-align: center
 
 
 
